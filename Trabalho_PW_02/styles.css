@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap");
+
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  background-color: #151a30;
+  /* color: #fff; */
+}
+
+nav {
+  align-items: center;
+  background-color: rgb(223 252 233);
+  height: 5rem;
+  overflow: hidden;
+}
+
+nav img {
+  margin-left: 50px;
+}
+
+.section {
+  padding-top: 3.5rem;
+  background-color: rgb(254 253 249/1);
+}
+
+.section .row {
+  flex-direction: row;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section .row p {
+  color: rgb(92 95 90) !important;
+  font-size: 1.125rem;
+}
+
+.section .row h2 {
+  color: rgb(26 28 25) !important;
+  font-size: 3rem;
+  margin-top: 0px;
+}
+
+.section .blocos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  column-gap: 3.5rem;
+  row-gap: 2rem;
+  grid-column: 2;
+  color: rgb(26 28 25) !important;
+}
+
+.blocos2 {
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 4rem !important;
+}
+
+.section4 {
+  background-color: rgb(237 253 242);
+  padding-bottom: 3rem;
+}
+
+.bloco {
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.section .row .blocos .bloco h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgb(26 28 25);
+  font-weight: 500;
+}
+
+.section2 {
+  background-color: rgb(237 253 242) !important;
+  padding-bottom: 3rem;
+}
+
+.section2 .lista li {
+  margin-top: 1rem;
+  color: rgb(92 95 90) !important;
+  font-size: 1rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-center h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.text-align-center p {
+  margin: 0 auto;
+  max-width: 50%;
+  font-size: 20px;
+  margin-bottom: 7rem;
+  font-family: "Roboto";
+}
+
+.row {
+  padding: 2%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 14px;
+  color: #fff;
+  background-color: rgb(18 158 63);
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: rgb(126, 220, 156);
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}
+
+#section3 {
+  padding-top: 5rem;
+  background-color: #222b45;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 95%;
+  margin-top: 2rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.card {
+  background-color: rgb(254 253 249);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  min-height: 300px;
+}
+
+.card h4 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.comentario p {
+  color: rgb(69 72 67);
+  text-align: justify;
+  font-size: 0.9rem!important;
+  margin-top: 2rem;
+}
+
+
+.bloco_duvidas {
+  background-color: rgb(255 240 224);
+  border-radius: 2.5rem;
+  max-width: 65%;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.bloco_duvidas  p{
+  color: rgb(92 95 90) !important;
+  font-size:1rem!important
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(255 240 224);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.fbuttom {
+  margin-top: 35px;
+  float: right;
+  padding: 10px 14px;
+  color: rgb(255 240 224);
+  background-color: rgb(18 158 63);
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}

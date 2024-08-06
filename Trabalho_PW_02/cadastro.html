@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesLoginCadastro.css" />
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+
+    <section class="section">
+
+        <div class="card">
+            <div class="titulo">
+                <img src="./assets/pessoa_celular.png" alt="Imagem de uma pessoa com celular" width="100px"
+                    height="100px" />
+                <h3>Crie sua conta como quiser</h3>
+                <p> Crie sua conta para começar <br> a controlar a sua barbearia</p>
+                <hr>
+            </div>
+
+            <div class="formulario">
+                <form action="#">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nomec" name="nome">
+
+
+                    <div class="formulario_linha">
+                        <div class="formulario_campo" style="margin-right: 20px;">
+                            <label for="endereco">Seu endereço</label>
+                            <input type="text" id="enderecoc" name="endereco">
+                        </div>
+                        <div class="formulario_campo">
+                            <label for="nomeBarbearia">Nome da barbearia</label>
+                            <input type="text" id="nomebarbeariac" name="nomeBarbearia">
+                        </div>
+                    </div>
+
+
+                    <div class="formulario_linha">
+                        <div class="formulario_campo" style="margin-right: 20px;">
+                            <label for="telefone">Seu teleforne</label>
+                            <input type="text" id="numtelc" name="telefone">
+                        </div>
+
+                        <div class="formulario_campo">
+                            <label for="email">Seu email</label>
+                            <input type="email" id="emailc" name="email">
+                        </div>
+                    </div>
+
+                    <label for="senha">Sua senha</label>
+                    <input type="password" id="senhac" name="senha">
+
+                    <button type="cadastrar">Começar a usar</button>
+                </form>
+            </div>
+        </div>
+        
+        <p>Já sou cadastrado. <a href="login.html" style="color: rgb(18 158 63);">Quero fazer login!</a></p>
+
+    </section>
+</body>
+
+</html>

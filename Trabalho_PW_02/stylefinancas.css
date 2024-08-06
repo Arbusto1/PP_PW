@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap");
+
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241 244 239);
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    align-items: center;
+    background-color: rgb(18 158 63);
+    height: 5rem;
+    overflow: hidden;
+}
+
+nav img {
+    margin-left: 50px;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(237 253 242);
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+  
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 80vh; */
+}
+
+.section .row {
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto;
+}
+  
+.section .row p {
+    color: rgb(92 95 90) !important;
+    font-size: 1.125rem;
+}
+  
+.section .row h2 {
+    color: rgb(26 28 25) !important;
+    font-size: 3rem;
+    margin-top: 0px;
+}
+  
+.section .blocos {
+    display: flex;
+    color: rgb(26 28 25) !important;
+}
+  
+.blocos2 {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  
+.bloco {
+    background-color: #dffce9;
+    border-radius: 13px;
+    width: 300px;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+  
+.section .row .blocos .bloco h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(26 28 25);
+    font-weight: 500;
+}
+  
+  
+.text-align-center {
+    text-align: center;
+}
+  
+.text-align-center {
+    text-align: center;
+}
+  
+.text-align-center h1 {
+    font-weight: 600;
+    font-size: 60px;
+}
+  
+.text-align-center p {
+    margin: 0 auto;
+    max-width: 50%;
+    font-size: 20px;
+    margin-bottom: 7rem;
+    font-family: "Roboto";
+}
+  
+.row {
+    padding: 2%;
+}
+  
+.float-left {
+    float: left;
+}
+  
+.float-right {
+    float: right;
+}
+  
+button {
+    padding: 10px 14px;
+    color: rgb(18 158 63);
+    background-color: #dffce9;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 800;
+    font-size: 1rem;
+}
+  
+a {
+    text-decoration: none;
+    padding: 10px 14px;
+    color: #e6e6e6;
+    /* background-color: rgb(18 158 63); */
+    /* border-radius: 0.5rem; */
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+}
+  
+button:hover {
+    background-color: rgb(126, 220, 156);
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+} 
+  
+.align-center {
+    text-align: center;
+}
+  
+.container {
+    display: flex;
+    gap: 2.5rem;
+    max-width: 95%;
+    margin-top: 2rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+  
+.card-principal {
+    margin-top: 1rem;
+    background-color: rgb(254, 254, 254);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+  
+.card {
+    background-color: rgb(254 253 249);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    min-height: 300px;
+}
+  
+.card h4 {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+#fbDialog.on{
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    background-color: rgb(252, 252, 252);
+    top: calc(50% - 150px);
+    right: calc(50% - 150px);
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px rgb(117, 117, 117);
+    padding: 16px;
+    display: block;
+}
+
+#fbDialog.off{
+    display: none;
+}
+
+dialog {
+    border-radius: 0.5rem;
+}
+
+dialog input {
+    color: rgb(18 158 63);
+    background-color: rgb(252, 252, 252);
+    border-radius: 0.3rem;
+}
