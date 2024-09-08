@@ -6,6 +6,7 @@
   Esse sistema é uma ferramenta de auxílio para quem quer montar uma barbearia e deseja saber sobre seus clientes, seu estoque de produtos, margem de lucro dentre outros dados.
 
   Lista de Funcionalidades:
+  
     1) Gestão da sua lista de Clientes.
     2) Gestão de entrada e saída de verbas.
 
