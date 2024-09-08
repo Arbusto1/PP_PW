@@ -21,48 +21,44 @@
                 <p> Crie sua conta para começar <br> a controlar a sua barbearia</p>
                 <hr>
             </div>
-
             <div class="formulario">
-                <form action="#">
-                    <label for="nome">Seu nome</label>
-                    <input type="text" id="nomec" name="nome">
-
-
-                    <div class="formulario_linha">
-                        <div class="formulario_campo" style="margin-right: 20px;">
-                            <label for="endereco">Seu endereço</label>
-                            <input type="text" id="enderecoc" name="endereco">
-                        </div>
-                        <div class="formulario_campo">
-                            <label for="nomeBarbearia">Nome da barbearia</label>
-                            <input type="text" id="nomebarbeariac" name="nomeBarbearia">
-                        </div>
-                    </div>
-
+                <form action="#" id="formularioCadastro">
+                    <label for="nomec">Seu nome</label>
+                    <input type="text" id="nomec" name="nome" required>
 
                     <div class="formulario_linha">
                         <div class="formulario_campo" style="margin-right: 20px;">
-                            <label for="telefone">Seu teleforne</label>
-                            <input type="text" id="numtelc" name="telefone">
+                            <label for="enderecoc">Seu endereço</label>
+                            <input type="text" id="enderecoc" name="endereco" required>
                         </div>
-
                         <div class="formulario_campo">
-                            <label for="email">Seu email</label>
-                            <input type="email" id="emailc" name="email">
+                            <label for="nomebarbeariac">Nome da barbearia</label>
+                            <input type="text" id="nomebarbeariac" name="nomeBarbearia" required>
                         </div>
                     </div>
 
-                    <label for="senha">Sua senha</label>
-                    <input type="password" id="senhac" name="senha">
+                    <div class="formulario_linha">
+                        <div class="formulario_campo" style="margin-right: 20px;">
+                            <label for="numtelc">Seu telefone</label>
+                            <input type="tel" id="numtelc" name="telefone" required>
+                        </div>
 
-                    <button type="cadastrar">Começar a usar</button>
+                        <div class="formulario_campo">
+                            <label for="emailc">Seu email</label>
+                            <input type="email" id="emailc" name="email" required>
+                        </div>
+                    </div>
+
+                    <label for="senhac">Sua senha</label>
+                    <input type="password" id="senhac" name="senha" required>
+
+                    <button type="submit">Começar a usar</button>
                 </form>
             </div>
         </div>
-        
         <p>Já sou cadastrado. <a href="login.html" style="color: rgb(18 158 63);">Quero fazer login!</a></p>
-
     </section>
+    <script src="cadastro_login.js"></script>
 </body>
 
 </html>

@@ -10,15 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(241 244 239);
+  background-color: rgb(241, 244, 239);
 }
 
 .card {
-  background-color: rgb(254 253 249);
+  background-color: rgb(254, 253, 249);
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 490px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   min-height: 300px;
@@ -29,19 +29,19 @@ body {
 }
 
 .section .card .titulo h3 {
-  color: rgb(46 49 45);
+  color: rgb(46, 49, 45);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .section .card .titulo p {
-  color: rgb(92 95 90);
+  color: rgb(92, 95, 90);
   font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 
 hr {
-  border: 1px solid rgb(229 229 229);
+  border: 1px solid rgb(229, 229, 229);
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -56,7 +56,7 @@ hr {
 }
 
 label {
-  color: rgb(77 77 77);
+  color: rgb(77, 77, 77);
   font-weight: 600;
   margin-top: 10px;
 }
@@ -71,22 +71,12 @@ input {
   box-sizing: border-box;
 }
 
-.formulario_campo {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.formulario_linha {
-  display: flex;
-}
-
 button {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 10px 14px;
   color: #fff;
-  background-color: rgb(18 158 63);
+  background-color: rgb(18, 158, 63);
   border-radius: 0.5rem;
   border: none;
   font-weight: 600;
@@ -99,8 +89,41 @@ button:hover {
   transition-timing-function: ease-in;
 }
 
-.section p {
+/* .section p {
   margin-top: 10px;
-  color: rgb(92 95 90);
+  color: rgb(92, 95, 90);
   font-size: 0.9rem;
+} */
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .formulario form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .titulo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
 }

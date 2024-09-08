@@ -5,76 +5,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="stylefinancas.css" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styleFinancasClientes.css" />
     <title>Financas</title>
-
-    <script>
-        function alteraModal(classe) {
-            document.getElementById("fbDialog").setAttribute("class", classe)
-        }
-    </script>
 </head>
 
 <body>
 
     <nav>
         <div class="row">
-            <div class="logo float-left">
-                <span
-                    style="background-color: rgb(223 252 233);color: rgb(13 119 47);border-radius: 0.5rem;justify-content: center;margin-bottom: 1rem;padding:0.35rem;font-size: 1.2rem;font-weight: 700;"
-                    class="material-symbols-outlined">
+            <div class="logo">
+                <span class="material-symbols-outlined icone">
                     account_circle </span>
-                <!-- <img src="./assets/logo.webp" alt="logo" /> -->
             </div>
 
-            <div class="menu-buttons float-right">
+            <div class="menu-buttons">
                 <a class="m-right-1" href="hclientes.html">Visão geral</a>
 
                 <a class="m-right-1" href="clientes.html">Clientes</a>
 
-                <a class="m-right-1" href="financas.html"
-                style="background-color: #fff;  color: rgb(18 158 63);">Finanças</a>
+                <a class="m-right-1 selected" href="financas.html">Finanças</a>
             </div>
     </nav>
 
     <section>
+
+        <div class="card-principal">
+            <h2>Dados financeiros</h2>
+            <hr>
+            <div class="atalhos">
+                <button id="openModalBtn">+</button>
+            </div>
+        </div>
+
         <div class="card-principal">
             <div class="blocos blocos2">
-                <div class="bloco" style="margin-right: 20px;">
+                <div class="bloco">
                     <h4>
-                        <span
-                            style="background-color: rgb(245, 245, 245);color: rgb(13 119 47);border-radius: 0.75rem;justify-content: center;margin-bottom: 1rem;padding:0.45rem;font-size: 1rem;font-weight: 700;margin-right: 5px;"
-                            class="material-symbols-outlined">
-                            groups </span>
-                        Nº de clientes
+                        <span class="material-symbols-outlined icone">
+                            attach_money </span>
+                        Saldo do mês
                     </h4>
                     <hr>
-                    <h3 style="color: rgb(92 95 90);">150</h3>
+                    <h3 style="color: rgb(92 95 90);" id="saldoMes"></h3>
                 </div>
 
-                <div class="bloco" style="margin-right: 20px;">
+                <div class="bloco">
                     <h4>
-                        <span
-                            style="background-color: rgb(245, 245, 245);color: rgb(13 119 47);border-radius: 0.75rem;justify-content: center;margin-bottom: 1rem;padding:0.45rem;font-size: 1rem;font-weight: 700;margin-right: 5px;"
-                            class="material-symbols-outlined">
-                            person </span>
-                        Próximo cliente
+                        <span class="material-symbols-outlined icone">
+                            monitoring </span>
+                        Saldo total
                     </h4>
                     <hr>
-                    <h3 style="color: rgb(92 95 90);">Mateus Costa</h3>
+                    <h3 style="color: rgb(92 95 90);" id="saldoTotal"></h3>
                 </div>
 
-                <div class="bloco" style="margin-right: 20px;">
+                <div class="bloco">
                     <h4>
-                        <span
-                            style="background-color: rgb(245, 245, 245);color: rgb(13 119 47);border-radius: 0.75rem;justify-content: center;margin-bottom: 1rem;padding:0.45rem;font-size: 1rem;font-weight: 700;margin-right: 4px;"
-                            class="material-symbols-outlined">
-                            group </span>
-                        Clientes do mês
+                        <span class="material-symbols-outlined icone">
+                            payments </span>
+                        Contas do mês
                     </h4>
                     <hr>
-                    <h3 style="color: rgb(92 95 90);">100</h3>
+                    <h3 style="color: rgb(92 95 90);" id="quantidadeContasDoMes"></h3>
                 </div>
             </div>
 
@@ -82,69 +75,62 @@
     </section>
 
     <section>
+        <div class="card-principal">
 
-        <div>
-            <div class="atalhos">
-                <button class="float-right">+</button>
+            <div class="table-responsive">
+                <table id="clientesTable">
+                    <thead>
+                        <tr>
+                            <th>Funcionário</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Valor</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela">
+
+                    </tbody>
+                </table>
             </div>
-
-            <h1>Clientes</h1>
-
-            <p>
-                Você tem 325 clientes!
-                Uma alta de 50% em relação ao mês passado!
-            </p>
         </div>
 
-        <div>
-            <div class="atalhos">
-                <button class="float-right">$</button>
-            </div>
-
-            <h1>Financeiro</h1>
-
-            <p>
-                Seu lucro aumentou em 42% em um mês!
-            </p>
-
-            <p>
-                Seu estoque de produto está cheio!
-            </p>
-        </div>
-
-        <div>
-            <div class="atalhos">
-                <button class="float-right" onclick="alteraModal('on')">fb</button>
-            </div>
-
-            <h1>Feedback</h1>
-            <p>O que está achando do sitema? Nos dê um feedback!</p>
-        </div>
 
     </section>
 
     <footer>
-        <p>&copy; 2024 <strong>AppBarber</strong> . Todos os direitos reservados.</p>
+        <img src="./assets/logo.webp" alt="Logo do sistema" />
+        <p>&copy; 2024 <strong>AppBarber</strong>. Todos os direitos reservados.</p>
     </footer>
 
-    <dialog open id="fbDialog" class="off">
+    <div id="dataModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Adicionar</h2>
+            <hr>
+            <form class="formulario" id="clienteForm">
+                <input type="hidden" id="clientIndex" value="">
+                <label for="funcionario">Funcionário:</label>
+                <input type="text" id="funcionario" name="funcionario" required>
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+                <label for="horario">Horário:</label>
+                <input type="text" id="horario" name="horario" required>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
 
-        <p>Dê seu feedback!</p>
-            
-            <form method="dialog">
-                <input type="text-box">
-                <input type="date">
-                <input type="range" id="satisfação" min="0" max="10">
-                <label for="satisfação">Satisfação</label>
-            
-                <menu>
-                    <button type="reset">Limpar</button>
-                    <button type="submit" onclick="alteraModal('off')">Confirmar</button>
-                </menu>
+                <button class="button-salvar" type="submit">Salvar</button>
             </form>
-    </dialog>        
+        </div>
+    </div>
 
-
+    <script src="scriptFinancas.js"></script>
 </body>
 
 </html>

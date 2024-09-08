@@ -20,6 +20,18 @@ nav img {
   margin-left: 50px;
 }
 
+.menu-buttons {
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
+.selected {
+  background-color: #fff;
+  color: rgb(18 158 63);
+}
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -48,6 +60,18 @@ section {
 .section .row p {
   color: rgb(92 95 90) !important;
   font-size: 1.125rem;
+}
+
+.icone {
+  background-color: rgb(245, 245, 245);
+  color: rgb(13 119 47);
+  border-radius: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 0.45rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
 .section .row h2 {
@@ -156,19 +180,25 @@ a {
   text-decoration: none;
   padding: 10px 14px;
   color: #e6e6e6;
-  /* background-color: rgb(18 158 63); */
-  /* border-radius: 0.5rem; */
+  padding: 10px 14px;
+  color: rgb(18 158 63);
+  background-color: #dffce9;
   border: none;
   font-weight: 600;
   font-size: 0.8rem;
-  /* text-transform: uppercase; */
 }
 
 button:hover {
   background-color: rgb(126, 220, 156);
   transition-duration: 0.15s;
   transition-timing-function: ease-in;
-} 
+}
+
+a:hover {
+  background-color: rgb(126, 220, 156);
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}
 
 #section3 {
   padding-top: 5rem;
@@ -217,4 +247,90 @@ button:hover {
 .card h4 {
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
+}
+
+@media (max-width: 1240px) {
+  .card-principal {
+    width: 70%;
+  }
+  .blocos2 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 7rem;
+  }
+
+  nav img {
+    margin-left: 0px;
+    margin-top: 0.9rem;
+  }
+
+  .menu-buttons {
+    float: none;
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .section .row {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .section .row .blocos .bloco h3 {
+    font-size: 1rem;
+  }
+
+  .section .row .blocos .bloco p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .section .row h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section .row p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .section .blocos {
+    grid-template-columns: 1fr !important;
+    column-gap: 0;
+  }
+
+  .bloco {
+    margin-top: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-principal {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .section .blocos {
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+
+  .bloco {
+    margin-top: 2rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
 }

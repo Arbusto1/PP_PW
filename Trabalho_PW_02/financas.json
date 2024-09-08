@@ -1,0 +1,50 @@
+[
+    {
+        "Funcionário": "Lucas Vieira",
+        "tipo": "Gasto",
+        "Descrição": "Conta de luz",
+        "horario": "08:10",
+        "valor": 159.00,
+        "data": "2024-09-01"
+    },
+    {
+        "Funcionário": "Maria Silva",
+        "tipo": "Gasto",
+        "Descrição": "Conta de água",
+        "horario": "09:00",
+        "valor": 90.00,
+        "data": "2024-09-05"
+    },
+    {
+        "Funcionário": "João Souza",
+        "tipo": "Gasto",
+        "Descrição": "Consórcio",
+        "horario": "11:00",
+        "valor": 500.00,
+        "data": "2024-09-10"
+    },
+    {
+        "Funcionário": "Ana Pereira",
+        "tipo": "Gasto",
+        "Descrição": "Depósito",
+        "horario": "12:00",
+        "valor": 56.90,
+        "data": "2024-09-15"
+    },
+    {
+        "Funcionário": "Pedro Santos",
+        "tipo": "Gasto",
+        "Descrição": "Compra do mês",
+        "horario": "14:00",
+        "valor": 356.77,
+        "data": "2024-09-20"
+    },
+    {
+        "Funcionário": "Carla Almeida",
+        "tipo": "Gasto",
+        "Descrição": "Depósito",
+        "horario": "14:00",
+        "valor": 90.61,
+        "data": "2024-08-30"
+    }
+]
